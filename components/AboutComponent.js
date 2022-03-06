@@ -40,7 +40,8 @@ class About extends Component {
           subtitle={item.description}
           leftAvatar={{
             source: { uri: baseUrl + item.image },
-          }}></ListItem>
+          }}
+        />
       );
     };
     if (this.props.partners.isLoading) {
