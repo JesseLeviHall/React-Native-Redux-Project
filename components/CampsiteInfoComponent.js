@@ -66,7 +66,7 @@ function RenderCampsite(props) {
   const { campsite } = props;
   const recognizeDrag = ({ dx }) => (dx < -200 ? true : false);
   const view = React.createRef();
-  const recognizeComment = ({ dx }) => (dx < 200 ? true : false);
+  const recognizeComment = ({ dx }) => (dx > 200 ? true : false);
 
   const panResponder = PanResponder.create({
     onStartShouldSetPanResponder: () => true,
